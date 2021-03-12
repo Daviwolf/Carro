@@ -1,6 +1,15 @@
 
 public class Carro {
-	
+	/**
+	 * <ul>
+	 * 
+	 * 
+	 * 
+	 * </ul>
+	 * @author Daviw
+	 * 
+	 */
+	  
 	static private final double consumo=5.5; // litros por 100 klm
 	
 	private double quantidadeCombustivel;
@@ -15,20 +24,33 @@ public class Carro {
 	}
 	
 	// Acessores 
-
+/**
+ * Consulta o consumo
+ * @return  Consultar o consumo do carro
+ */
 	public static double getConsumo() {
 		return consumo;
 	}
-
+/**
+ * Consulta o combustivel
+ * 
+ * @return Consultar a quantidade de combustivel
+ */
 	public double getQuantidadeCombustivel() {
 		return quantidadeCombustivel;
 	}
-
+/**
+ *
+ * @return Consultar a capacidade do tanque de combustivel
+ */
 	public double getCapacidadeDeposito() {
 		return capacidadeDeposito;
 	}
-	
-	// Métodos 
+	/**
+	 * Serve para colucar combustivel no carro
+	 * 
+	 * @param quantidade A quantidade de combustivel que se vai por no carro
+	 */
 	
 	public void meterCombustivel( double quantidade) { 		
 		
@@ -38,7 +60,12 @@ public class Carro {
 		
 		
 	}
-	
+	// Métodos 
+	/**
+	 * 
+	 * Atesta o combustivel
+	 * @param quantidade A quantidade de combustivel
+	 */
 	// atestar o depósito
 	public double meterCombustivel() {
 		
@@ -50,7 +77,11 @@ public class Carro {
 		return litrosMeter;
 	}
 	
-	
+	/**
+	 * Vai simular a movimentação do carro
+	 * @param distancia É a distância percorrida pelo carro
+	 * @return Se está a andar ou não
+	 */
 	// distancia em klm
 	public boolean andar( double distancia ) {
 		
@@ -69,14 +100,22 @@ public class Carro {
 			
 			
 	}
-	
+	/**
+	 * Serve para parar o carro
+	 * 
+	 * @return Carro parado
+	 */
 	public boolean parar() {
 		
 		// se estiver a andar pára 
 		// falta a flag que indica se o carro está em andamento
 		return true;
 	}
-	
+	/**
+	 * Serve para calclar a autonomia do carro
+	 * 
+	 * @return Quantos km se pode fazer com o combustivel atual
+	 */
 	// kmCombustivel( )    
 	public double obterAutonomia() {
 		
